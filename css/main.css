@@ -87,6 +87,10 @@ header nav {
   font-size: 1em;
 }
 
+#container {
+  display: block;
+}
+
 .hero-design {
   display: none;
 }
