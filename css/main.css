@@ -414,6 +414,7 @@ section {
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
     text-align: center;
     padding-bottom: 20px;
+    overflow-y: hidden;
   }
   .navlinks li {
     opacity: 0;
