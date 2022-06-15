@@ -76,7 +76,7 @@
                 <div class="inner transition2">
                     <p class="aboutme-title">About me</p> 
                     <p class="aboutme-desc">
-                        I am a computer science student at University of Warwick. I have a diverse set of skills ranging from software development in Java, Python and C/C++, to frontend web development in HTML, CSS, JavaScript and backend web development in Java, Python including databases such as SQL. In addition to this, I have a fair amount of experience in Adobe photoshop and Adobe XD.
+                        I am a computer science student at University of Warwick. I have a diverse set of skills ranging from software development in Python, C/C++, and Java to frontend web development in HTML, CSS, JavaScript and backend web development in Python including databases such as SQL. In addition to this, I have a fair amount of experience in Adobe photoshop and Adobe XD/Figma.
                     </p>
                 </div>
             </div>
@@ -138,26 +138,65 @@
                         <p class="subtitle">Web application</p>
     
                         <p class="aboutme-title">SQLAcademy - Web App to Teach SQL </p>
-                        <p class="aboutme-desc">This web application was built to teach SQL to students. It provided an integrated SQL compiler, interactive exercises and quizes, performance graphs and charts, and live chat with an expert functionality. The integrated SQL compiler can be used to run SQL code on the web without requiring any installation on the user's system. </p>
+                        <p class="aboutme-desc">This web application was built to teach SQL to students. It provides an integrated SQL compiler, interactive exercises and quizes, performance graphs and charts, and live chat with an expert functionality. The integrated SQL compiler can be used to run SQL code on the web without requiring any installation on the user's system. </p>
                     </div>
                 </div>
-                <a href="#" onclick="return false;"><img src="images/Moodlysis.png" alt="a"></a>
+                <a href="#" onclick="return false;"><img class="next-prev-img" id="img-next-prev" src="images/1/img1.png" alt="a"></a>
+                <div class="next-prev"></div>
+                <div class="next-prev">
+                    <a class="previous round" onclick="prev();">&#8249;</a>
+                    <a class="next-prev-desc" id="next-prev-desc">1/6</a>
+                    <a class="next round" onclick="next();">&#8250;</a>
+                    <script>
+                        var id = 1;
+                        function next() {
+                            id++;
+                            if(id == 7)
+                            {
+                                id = 1;
+                            }
+                            document.getElementById("img-next-prev").src = "images/1/img"+id+".png";
+                            document.getElementById("next-prev-desc").innerHTML=id+"/6";
+                            console.log("img"+id+".png");
+                        }
+                        function prev() {
+                            id--;
+                            if(id == 0)
+                            {
+                                id = 1;
+                            }
+                            document.getElementById("img-next-prev").src = "images/1/img"+id+".png";
+                            document.getElementById("next-prev-desc").innerHTML=id+"/6";
+                        }
+                    </script>
+                </div>
             </div>
             
+            <div class="portfolio-container container-right transition3">
+                <a class="right-image" href="#" onclick="return false;"><img src="images/1/Game.png" alt="a"></a>
+                <div class="portfolio-left content-rightalign">
+                    <div class="inner">
+                        <p class="subtitle">Web application</p>
+    
+                        <p class="aboutme-title">3D Game</p>
+                        <p class="aboutme-desc">This web application was built using HTML, CSS, and Three.js. The game involved flying a spaceship, collecting various types of rocks to earn points and dodging obstacles. It included features such as animation, collision detection, physics, and music.</p>
+                    </div>
+                </div>
+            </div>
             
-<!--             <div class="portfolio-container transition3">
+            <div class="portfolio-container transition3">
                 <div class="portfolio-left">
                     <div class="inner">
                         <p class="subtitle">Web application</p>
     
-                        <p class="aboutme-title">Moodlysis - Mood analysis application </p>
-                        <p class="aboutme-desc">This web application was built to estimate the mood of the attendees in live events using VADER library for sentiment analysis.</p>
+                        <p class="aboutme-title">Bill splitting system</p>
+                        <p class="aboutme-desc">This web application was built using HTML, CSS, PHP, JavaScript and SQLite. This app can be used as tool where a group of friends/people can register and split their restaurant, taxi or movie bills online within their group. </p>
                     </div>
                 </div>
-                <a href="#" onclick="return false;"><img src="images/Moodlysis.png" alt="a"></a>
-            </div> -->
+                <a href="#" onclick="return false;"><img src="images/UPAY.png" alt="a"></a>
+            </div>
             
-            <div class="portfolio-container container-right transition3">
+            <!-- <div class="portfolio-container container-right transition3">
                 <a class="right-image" href="#" onclick="return false;"><img src="images/UPAY.png" alt="a"></a>
                 <div class="portfolio-left content-rightalign">
                     <div class="inner">
@@ -168,7 +207,7 @@
                     </div>
                 </div>
                 <a class="left-image" href="#"onclick="return false;"><img src="images/UPAY.png" alt="a"></a>
-            </div>
+            </div> -->
 
 <!--             <div class="portfolio-container transition3">
                 <div class="portfolio-left">
